@@ -15,7 +15,7 @@ public class Main {
         float secondNumber = scanner.nextFloat();
 
         //present user with calculations
-        System.out.println("* Possible Calculations *");
+        System.out.println("* Possible Calculations *1");
         System.out.println("(A)dd");
         System.out.println("(S)ubtract");
         System.out.println("(M)ultiply");
