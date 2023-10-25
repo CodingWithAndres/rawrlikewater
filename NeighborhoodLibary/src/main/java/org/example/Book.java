@@ -17,6 +17,8 @@ public class Book {
     private int id;
     private String isbn;
     private String title;
+    //I might rename this variable to just isCheckedOut mainly because the boolean doesn't tell us who it is
+    //checked out too
     private boolean isCheckedOutTo;
     private String checkedOutTo;
 
@@ -27,6 +29,15 @@ public class Book {
         this.title = title;
         this.isCheckedOutTo = isCheckedOutTo;
         this.checkedOutTo = checkedOutTo;
+    }
+
+    //This is another way to write the constructor so you don't have to type false and "" a bunch of times
+    public Book(int id, String isbn, String title){
+        this.id = id;
+        this.isbn = isbn;
+        this.title = title;
+        this.isCheckedOutTo = false;
+        this.checkedOutTo = "";
     }
 
     //Getters & Setters

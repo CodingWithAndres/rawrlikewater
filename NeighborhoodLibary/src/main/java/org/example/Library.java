@@ -2,6 +2,11 @@ package org.example;
 
 import java.util.Scanner;
 
+/*
+Overall, good job! You broke tasks down into methods to make your code readable and clean.
+I gave you some advice about the constructor. Sometimes you can change the number of arguments
+in the constructor to be more convenient for you. Less typing.
+ */
 public class Library {
     public static void main(String[] args) {
         Book[] inventory = initializeInventory();
@@ -31,10 +36,12 @@ public class Library {
                 }
             }
 
+            //I like that this is its own method!
             public static Book[] initializeInventory() {
                 Book[] inventory = new Book[20];
 
-                inventory[0] = new Book(1, "000-0-00-00000-0", "Book One", false, "");
+                //See how if you change the constructor its less typing?
+                inventory[0] = new Book(1, "000-0-00-00000-0", "Book One");
                 inventory[1] = new Book(2, "000-0-00-00000-1", "Book Two", false, "");
                 inventory[2] = new Book(3, "000-0-00-00000-2", "Book Three", false, "");
                 inventory[3] = new Book(4, "000-0-00-00000-3", "Book Four", false, "");
