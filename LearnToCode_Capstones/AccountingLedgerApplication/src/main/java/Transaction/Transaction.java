@@ -1,4 +1,4 @@
-package Capstone1;
+package Transaction;
 
 public class Transaction {
     private String date;
