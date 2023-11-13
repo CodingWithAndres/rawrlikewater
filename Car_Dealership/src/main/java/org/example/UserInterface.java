@@ -29,6 +29,8 @@ public class UserInterface {
             System.out.println("7.) Explore vehicles by type");
             System.out.println("8.) Add vehicle");
             System.out.println("9.) Remove vehicle");
+            System.out.println("10.) Buy vehicle");
+            System.out.println("11.) Lease vehicle");
             try {
                 int userInput = scanner.nextInt();
 
@@ -73,6 +75,15 @@ public class UserInterface {
                     case 9:
                         removeVehicle();
                         break;
+
+                    case 10:
+                        processBuyVehicle();
+                        DealershipFileManager.saveDealership(dealership);
+                        break;
+                    case 11:
+                        processLeaseVehicle();
+                        DealershipFileManager.saveDealership(dealership);
+                        break;
                         
                     default:
                         System.out.println("Invalid option, sorry!");
@@ -85,6 +96,14 @@ public class UserInterface {
             }
         }
         scanner.close();
+    }
+
+
+    //implement methods for leasing and buying
+    private void processLeaseVehicle() {
+    }
+
+    private void processBuyVehicle() {
     }
 
     private void removeVehicle() {

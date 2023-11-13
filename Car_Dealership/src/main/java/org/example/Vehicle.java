@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.List;
+
 public class Vehicle {
     private int vin;
     private int year;
@@ -20,6 +22,22 @@ public class Vehicle {
         this.odometer = odometer;
         this.price = price;
     }
+
+        @Override
+        public String toString() {
+            return "*Vehicle* " +
+                    "vin='" + getVin() + '\'' +
+                    ", year='" + getYear() + '\'' +
+                    ", make='" + getMake() + '\'' +
+                    ", model='" + getModel() + '\'' +
+                    ", color='" + getColor() + '\'' +
+                    ", type='" + getType() + '\'' +
+                    ", odometer='" + getOdometer() + '\'' +
+                    ", price=" + getPrice() +
+                    '}';
+        }
+
+
 
     public int getVin() {
         return vin;
@@ -85,3 +103,4 @@ public class Vehicle {
         this.price = price;
     }
 }
+
