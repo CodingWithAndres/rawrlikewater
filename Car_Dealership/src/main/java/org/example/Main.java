@@ -1,5 +1,8 @@
 package org.example;
 
+//You leave yourself a lot of notes which is good. When taking on big projects like this
+//it's easy to forget all of the little things you have to do along the way.
+//Overall solid work and it seems functional!
 public class Main {
     public static void main(String[] args) {
         UserInterface userInterface = new UserInterface();
@@ -9,7 +12,7 @@ public class Main {
 }
 
 
-
+//Glad you're using pseudo code to your advantage
 //Make a file input stream that points to the file that holds my vehicles
 
 //Make a scanner to take in the file input stream

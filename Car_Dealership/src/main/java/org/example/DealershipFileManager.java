@@ -12,6 +12,8 @@ public class DealershipFileManager {
     private DealershipFileManager() {
 
     }
+
+    //Nice use of static and the private constructor
     public static Dealership getDealership() {
         Dealership dealership = new Dealership("* House of Cars *","2023 Andy Street","214-836-0000");
 
